@@ -1,0 +1,59 @@
+div.file-list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div.file-list div.tab, div.tab.sources ul li {
+    margin: 0;
+    margin-top: 2px;
+    padding: 2px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    height:20px;
+    font-weight: bold;
+    background: dimgray;
+    color: lightgray;
+    border: 1px slategray solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+div.create-file input {
+    background: dimgray;
+    color: white;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+div.file-list div.tab:hover {
+    background: lightslategray;
+}
+
+div.file-indicator {
+    padding: 2px;
+    padding-left: 5px;
+    margin-left: 5px;
+    color: dimgray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    border-bottom: 1px dimgray dashed;
+    width: 50%;
+}
+
+button.confirm-create {
+    position: absolute;
+    right: -18px;
+    margin-top: -19px;
+    background: lightgray;
+    width: 20px;
+    height: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

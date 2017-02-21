@@ -1,0 +1,47 @@
+.right {
+    height: 100%;
+    width: 80%;
+    background: white;
+    z-index: 1;
+    float: right;
+}
+
+div.right div.top-right {
+    position: absolute;
+    top: 0px;
+    height: 65%;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+} 
+
+div.right div.bottom-right {
+    position:absolute;
+    bottom: 0px;
+    height: 33%;
+    width: 80%;
+    background: darkgray;
+}
+
+.left {
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    background: #3e3e3e;
+    margin: 0;
+    float: left;
+    z-index: 2;
+}
+
+div.left div.top-left {
+    height: 75%;
+    width: 100%;
+}
+
+div.left div.bottom-left {
+    position: absolute;
+    bottom: 0px;
+    height: 25%;
+    width: 100%;
+}

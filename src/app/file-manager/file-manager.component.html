@@ -1,0 +1,35 @@
+<div class="file-list">
+  <div>
+    <div class="file-indicator">test</div>
+  <div *ngIf="tddState==0" class="tab create-file">
+    <div>
+      <input #newTestFile type="text" [placeholder]="testPlaceHolder"
+        [(ngModel)] = "testFilename" 
+        (focus)="changePlaceHolder(true, 1)"
+        (focusout)="changePlaceHolder(false, 1); newTestFile.value=''"
+        (keyup.enter)="createFile('test'); newTestFile.value=''"/>
+    </div>
+  </div>
+  <div class="tab" *ngFor="let test of testFiles">
+    {{test._filename}}
+  </div>
+  <div class="file-indicator">src</div>
+  <div *ngIf="tddState!=0" class="tab create-file">
+    <div>
+      <input #newSrcFile type="text" [placeholder]="srcPlaceHolder"
+        [(ngModel)] = "srcFilename" 
+        (focus)="changePlaceHolder(true, 0)"
+        (focusout)="changePlaceHolder(false, 0); newSrcFile.value=''"
+        (keyup.enter)="createFile('source'); newSrcFile.value=''"/>
+    </div>
+  </div>
+  <div class="tab" *ngFor="let source of sourceFiles">
+    {{source._filename}}
+  </div>
+  </div>
+</div>
+
+    <!--<button *ngIf="placeHolder!='Create New File' && newFile.value!=''" class="confirm-create" 
+      (click)=createFile()>
+      +
+    </button>-->

@@ -1,0 +1,4 @@
+<div class="parentDiv">
+<app-lobby *ngIf="isLoggedIn == false"  (onLogin)="onLogin($event)">Loading..</app-lobby>
+<app-training-session *ngIf="isLoggedIn == true">Loading..</app-training-session>
+</div>

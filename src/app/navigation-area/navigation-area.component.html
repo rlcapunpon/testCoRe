@@ -1,0 +1,10 @@
+<div class="nav-header">
+</div>
+<div class="tddState">
+  <div id="test" *ngIf="tddState == 0">Test</div>
+  <div id="code" *ngIf="tddState == 1">Code</div>
+  <div id="refactor" *ngIf="tddState == 2">Refactor</div>
+</div>
+<div id="file-manager">
+    <app-file-manager [tddState] = "tddState"> Loading.. </app-file-manager>
+</div>
